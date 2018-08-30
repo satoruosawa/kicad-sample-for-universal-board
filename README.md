@@ -58,4 +58,4 @@
   - Track Widthを0.254とする。
 - 実際の配置
   - 外周はEdge.Cutsレイヤーに描画
-  -
+  - read netlistでnetlistを読み込み
