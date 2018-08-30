@@ -40,3 +40,8 @@
   - Resistor_THT: 一般的な抵抗THT(Through-hole technology)水平、垂直配置、穴の距離など選択可能。秋月の1/4W抵抗はL6.3mm, D2.5mmである。
   - LED_THT: 一般的なLED
   -
+
+### パターンの作図
+- PCB layout editorアイコンをクリック
+- Page settignsを編集
+  - タイトル、日付、リビジョン、所属などを追記
