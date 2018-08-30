@@ -1,4 +1,70 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D?
+U 1 1 5B87612A
+P 5150 4300
+F 0 "D?" V 5188 4183 50  0000 R CNN
+F 1 "OSR5JA3Z74A" V 5097 4183 50  0000 R CNN
+F 2 "" H 5150 4300 50  0001 C CNN
+F 3 "~" H 5150 4300 50  0001 C CNN
+	1    5150 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8761AC
+P 5150 3450
+F 0 "R?" H 5220 3496 50  0000 L CNN
+F 1 "640" H 5220 3405 50  0000 L CNN
+F 2 "" V 5080 3450 50  0001 C CNN
+F 3 "~" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4450 5150 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5B876387
+P 5150 4950
+F 0 "#PWR?" H 5150 4700 50  0001 C CNN
+F 1 "GND" H 5155 4777 50  0000 C CNN
+F 2 "" H 5150 4950 50  0001 C CNN
+F 3 "" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5B8766D2
+P 5950 3050
+F 0 "SW?" H 5950 3285 50  0000 C CNN
+F 1 "SW_SPST" H 5950 3194 50  0000 C CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3050 5750 3050
+Wire Wire Line
+	6150 3050 6750 3050
+Wire Wire Line
+	5150 3600 5150 4150
+Wire Wire Line
+	5150 3050 5150 3300
 $EndSCHEMATC
