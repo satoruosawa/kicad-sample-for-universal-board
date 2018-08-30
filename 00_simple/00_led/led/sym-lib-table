@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name jp_transistor)(type Legacy)(uri /Users/satoruosawa/Downloads/kicad-jp-library-master/library/jp_transistor.lib)(options "")(descr ""))
+)
