@@ -21,3 +21,5 @@
   - タイトル、日付、リビジョン、所属などを追記
 - 出力
   - File -> plot から出力
+- netlist の生成
+  - generate netlistアイコンをクリックして生成
