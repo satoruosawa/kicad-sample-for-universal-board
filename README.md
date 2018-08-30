@@ -1,0 +1,1 @@
+# kicad-sample-for-universal-board
