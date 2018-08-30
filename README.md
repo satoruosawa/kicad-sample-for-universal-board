@@ -11,3 +11,8 @@
   - 名前を編集する。名前部分をダブルクリックで編集可能。抵抗やキャパシタ等は定数を記載。
 - アノテーション
   - Annotate Schematic Symbols -> Annotateをクリック
+- 回路チェック
+  - Perform electrical rule checkをクリック
+  - 電源系とグランドは電源フラグと接続する。
+  - 繋がない端子はPlace no connection flagをつける。
+  - For ERC(Electrical rule check)などとして追記する。
