@@ -29,3 +29,5 @@
 - mylib.prettyフォルダを追加する。
 - Footprint Editor を開いて、Preferences -> Manage Footprint Libraries... -> Project Specific Librariesタブを開く。
 - Browse Librariesをクリックして、mylib.prettyフォルダを追加する。kicadからmylibが参照可能になる。
+- フットプリントの編集
+  - ユニバーサル基板のピッチは100mil(2.54mm)であることを考慮して設計する。
