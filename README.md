@@ -1,9 +1,9 @@
 # kicad-sample-for-universal-board
 
-# ファイルの追加
+### ファイルの追加
 - Create new project
 
-# 回路図の編集
+### 回路図の編集
 - Schematic layout editorアイコンをクリックして開始する。
 - 部品のレイアウト
   - 部品は標準ライブラリの"device"から選択できる。
@@ -23,3 +23,9 @@
   - File -> plot から出力
 - netlist の生成
   - generate netlistアイコンをクリックして生成
+
+### フットプリントの作成
+自作 or 外部ライブラリを使うときは、mylibフォルダに追加する。
+- mylib.prettyフォルダを追加する。
+- Footprint Editor を開いて、Preferences -> Manage Footprint Libraries... -> Project Specific Librariesタブを開く。
+- Browse Librariesをクリックして、mylib.prettyフォルダを追加する。kicadからmylibが参照可能になる。
