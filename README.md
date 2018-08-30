@@ -31,3 +31,12 @@
 - Browse Librariesをクリックして、mylib.prettyフォルダを追加する。kicadからmylibが参照可能になる。
 - フットプリントの編集
   - ユニバーサル基板のピッチは100mil(2.54mm)であることを考慮して設計する。
+
+### コンポーネントとフットプリントの割当て
+- Schematic layout editor画面で、Tools -> Assign Footprints... をクリック
+- 各コンポーネントにフットプリントを割り当てる。
+- View Footprintをクリックすると、フットプリントを確認できる。
+- いくつかのフットプリントはデフォルトライブラリに含まれている。
+  - Resistor_THT: 一般的な抵抗THT(Through-hole technology)水平、垂直配置、穴の距離など選択可能。秋月の1/4W抵抗はL6.3mm, D2.5mmである。
+  - LED_THT: 一般的なLED
+  -
