@@ -52,3 +52,5 @@
   - F.SlkS	部品実装側のシルク印刷面。
   - B.SlkS	はんだ面側のシルク印刷面。
   - Edge.Cuts  基板の外形線を引くレイヤ。
+- Setup -> Default Pad propertiesをクリック
+  - 使用するユニバーサル基板の寸法に合わせる。ここでは、Hole size を0.9mm, パッドサイズを1.4mmとしておく。
