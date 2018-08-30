@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 0)
@@ -29,7 +29,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.254)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -88,11 +88,16 @@
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
-    (trace_width 0.25)
+    (trace_width 0.254)
     (via_dia 0.8)
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
   )
+
+  (gr_line (start 127 114.3) (end 127 88.9) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 152.4 114.3) (end 127 114.3) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 152.4 88.9) (end 152.4 114.3) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 127 88.9) (end 152.4 88.9) (layer Edge.Cuts) (width 0.15))
 
 )

@@ -54,3 +54,8 @@
   - Edge.Cuts  基板の外形線を引くレイヤ。
 - Setup -> Default Pad propertiesをクリック
   - 使用するユニバーサル基板の寸法に合わせる。ここでは、Hole size を0.9mm, パッドサイズを1.4mmとしておく。
+- Setup -> design ruleをクリック
+  - Track Widthを0.254とする。
+- 実際の配置
+  - 外周はEdge.Cutsレイヤーに描画
+  -
