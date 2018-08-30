@@ -16,3 +16,6 @@
   - 電源系とグランドは電源フラグと接続する。
   - 繋がない端子はPlace no connection flagをつける。
   - For ERC(Electrical rule check)などとして追記する。
+- ページ設定
+  - Page settingsアイコンをクリック
+  - タイトル、日付、リビジョン、所属などを追記

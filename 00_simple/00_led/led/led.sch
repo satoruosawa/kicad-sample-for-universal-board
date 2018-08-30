@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "simple LED"
+Date "2018-08-30"
+Rev "00.00"
+Comp "Takram"
 Comment1 ""
 Comment2 ""
 Comment3 ""
