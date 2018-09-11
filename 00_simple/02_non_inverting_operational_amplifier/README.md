@@ -1,0 +1,3 @@
+- I1 = I2
+- Vn / R1 = (Vo - Vn) / R2
+- Vo = Vn * (R1 + R2) / R1
