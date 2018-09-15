@@ -1,4 +1,4 @@
-# FETのスイッチ回路
+# NチャネルFETのスイッチ回路
 ### 概要
 - MOS-FETはゲート端子が浮いていると（フロート状態）、破損したり誤動作しますのでR2を省くことはできません。R2は10KΩ～470KΩの範囲であればいいでしょう。
 [MOS-FETによるドライブ回路](http://www.zea.jp/audio/schematic/sc_file/002.htm)
@@ -27,6 +27,26 @@
 ### 計算
 - R1は1kΩ?
 - R2は20kΩ?
-- Vcc: 6Vとすると、
-  - R3 = (6V - 3.1V) / 30mA = 96.7Ω
-  - R3を100Ωとすると最大2.9V * 2.9V / 100Ω = 84mWとなる。R2は100Ω 1/4Wカーボン抵抗などを使う。
+- 例1
+  - DC Forward Current(標準電流): 30mA, Vf: 3.1V(Vfmax:3.6V)の高輝度LED(OSR5JA3Z74A)の場合
+  - Vcc: 6V
+  - 2SK2232
+    - Vdss: 60V > 6V OK
+    - Id: 25A > 30mA OK
+    - Vth: 2.0V < 5V OK
+    - 4V駆動 OK
+  - Vcc: 6Vなので、
+    - R3 = (6V - 3.1V) / 30mA = 96.7Ω
+    - R3を100Ωとすると最大2.9V * 2.9V / 100Ω = 84mWとなる。R2は100Ω 1/4Wカーボン抵抗などを使う。
+
+- 例2
+  - DC Forward Current(max): 1500mA, Vf: 2.95V(Vfmax:3.25V)のパワーLED(XGPWHT 5w)に2.75V200mAを流す場合
+  - Vcc: 6V
+  - 2SK2232
+    - Vdss: 60V > 6V OK
+    - Id: 25A > 200mA OK
+    - Vth: 2.0V < 5V OK
+    - 4V駆動 OK
+  - Vcc: 6Vなので、
+    - R3 = (6V - 2.95V) / 200mA = 15.3Ω
+    - R3を10Ωとすると電流Ic = 305mA, 電力P = (3.05V)^2 / 10Ω = 930mWとなる。R2は10Ω 5Wのセメント抵抗などを使う。
