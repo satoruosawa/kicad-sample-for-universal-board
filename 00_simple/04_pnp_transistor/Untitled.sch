@@ -23,7 +23,7 @@ F 1 "2SA1015GR" H 5691 3455 50  0000 L CNN
 F 2 "" H 5700 3600 50  0001 C CNN
 F 3 "~" H 5500 3500 50  0001 C CNN
 	1    5500 3500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R2
@@ -107,9 +107,9 @@ Text Label 5850 2650 0    50   ~ 0
 Vcc
 Text Label 4050 3600 0    50   ~ 0
 Vin
-Text Label 5700 3750 0    50   ~ 0
+Text Label 5700 3250 0    50   ~ 0
 E
-Text Label 5700 3300 0    50   ~ 0
+Text Label 5700 3700 0    50   ~ 0
 C
 Text Label 5350 3450 0    50   ~ 0
 B
