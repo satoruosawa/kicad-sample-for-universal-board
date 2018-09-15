@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5B9C9C95
+P 6000 3750
+F 0 "D1" V 6038 3633 50  0000 R CNN
+F 1 "OSR5JA3Z74A" V 5947 3633 50  0000 R CNN
+F 2 "" H 6000 3750 50  0001 C CNN
+F 3 "~" H 6000 3750 50  0001 C CNN
+	1    6000 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 5B9C9D87
+P 5900 2800
+F 0 "Q2" H 6105 2754 50  0000 L CNN
+F 1 "2SJ334" H 6105 2845 50  0000 L CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "~" H 5900 2800 50  0001 C CNN
+	1    5900 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B9C9E13
+P 4700 2250
+F 0 "R2" H 4770 2296 50  0000 L CNN
+F 1 "R" H 4770 2205 50  0000 L CNN
+F 2 "" V 4630 2250 50  0001 C CNN
+F 3 "~" H 4700 2250 50  0001 C CNN
+	1    4700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B9C9E79
+P 6000 4450
+F 0 "R3" H 6070 4496 50  0000 L CNN
+F 1 "R" H 6070 4405 50  0000 L CNN
+F 2 "" V 5930 4450 50  0001 C CNN
+F 3 "~" H 6000 4450 50  0001 C CNN
+	1    6000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B9C9F06
+P 3650 3400
+F 0 "R1" V 3443 3400 50  0000 C CNN
+F 1 "R" V 3534 3400 50  0000 C CNN
+F 2 "" V 3580 3400 50  0001 C CNN
+F 3 "~" H 3650 3400 50  0001 C CNN
+	1    3650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_ECB Q1
+U 1 1 5B9C9FB9
+P 4600 3400
+F 0 "Q1" H 4791 3446 50  0000 L CNN
+F 1 "2SA1815GR" H 4791 3355 50  0000 L CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3400 4400 3400
+Wire Wire Line
+	4700 3200 4700 2800
+Wire Wire Line
+	4700 2800 5700 2800
+Connection ~ 4700 2800
+Wire Wire Line
+	4700 2800 4700 2400
+Wire Wire Line
+	6000 3000 6000 3600
+Wire Wire Line
+	6000 3900 6000 4300
+$Comp
+L power:GND #PWR02
+U 1 1 5B9CA124
+P 6000 5000
+F 0 "#PWR02" H 6000 4750 50  0001 C CNN
+F 1 "GND" H 6005 4827 50  0000 C CNN
+F 2 "" H 6000 5000 50  0001 C CNN
+F 3 "" H 6000 5000 50  0001 C CNN
+	1    6000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B9CA15F
+P 4700 5000
+F 0 "#PWR01" H 4700 4750 50  0001 C CNN
+F 1 "GND" H 4705 4827 50  0000 C CNN
+F 2 "" H 4700 5000 50  0001 C CNN
+F 3 "" H 4700 5000 50  0001 C CNN
+	1    4700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B9CA206
+P 6000 1300
+F 0 "#FLG02" H 6000 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 1474 50  0000 C CNN
+F 2 "" H 6000 1300 50  0001 C CNN
+F 3 "~" H 6000 1300 50  0001 C CNN
+	1    6000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2100 4700 1700
+Wire Wire Line
+	4700 1700 6000 1700
+Wire Wire Line
+	6000 1700 6000 1300
+Wire Wire Line
+	6000 1700 6000 2600
+Connection ~ 6000 1700
+Wire Wire Line
+	6000 4600 6000 5000
+Wire Wire Line
+	4700 5000 4700 3600
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B9CA5B3
+P 2800 3400
+F 0 "#FLG01" H 2800 3475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 3574 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "~" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3400 3500 3400
+Text Label 6100 1300 0    50   ~ 0
+Vcc
+Text Label 2750 3550 0    50   ~ 0
+Vin
+Text Label 6100 3050 0    50   ~ 0
+D
+Text Label 6100 2550 0    50   ~ 0
+S
+Text Label 5750 3000 0    50   ~ 0
+G
+Text Label 4800 3650 0    50   ~ 0
+E
+Text Label 4800 3200 0    50   ~ 0
+C
+Text Label 4450 3350 0    50   ~ 0
+B
+Text Label 5100 2700 0    50   ~ 0
+Vt
+$EndSCHEMATC
