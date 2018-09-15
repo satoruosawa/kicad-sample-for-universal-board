@@ -1,0 +1,115 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_ECB Q1
+U 1 1 5B99AC4F
+P 5600 3800
+F 0 "Q1" H 5791 3846 50  0000 L CNN
+F 1 "2SC1815" H 5791 3755 50  0000 L CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5B99ADF1
+P 5700 2250
+F 0 "D1" V 5738 2133 50  0000 R CNN
+F 1 "LED" V 5647 2133 50  0000 R CNN
+F 2 "" H 5700 2250 50  0001 C CNN
+F 3 "~" H 5700 2250 50  0001 C CNN
+	1    5700 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B99AE7F
+P 5700 2950
+F 0 "R2" H 5770 2996 50  0000 L CNN
+F 1 "R" H 5770 2905 50  0000 L CNN
+F 2 "" V 5630 2950 50  0001 C CNN
+F 3 "~" H 5700 2950 50  0001 C CNN
+	1    5700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2400 5700 2800
+Wire Wire Line
+	5700 3100 5700 3600
+Wire Wire Line
+	5700 4000 5700 4450
+$Comp
+L power:GND #PWR01
+U 1 1 5B99AFB8
+P 5700 4450
+F 0 "#PWR01" H 5700 4200 50  0001 C CNN
+F 1 "GND" H 5705 4277 50  0000 C CNN
+F 2 "" H 5700 4450 50  0001 C CNN
+F 3 "" H 5700 4450 50  0001 C CNN
+	1    5700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B99B014
+P 5700 1700
+F 0 "#FLG01" H 5700 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 1874 50  0000 C CNN
+F 2 "" H 5700 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B99B046
+P 4400 3800
+F 0 "#FLG02" H 4400 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 3974 50  0000 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+Text Label 5800 3550 0    50   ~ 0
+C
+Text Label 5800 4050 0    50   ~ 0
+E
+Text Label 5450 3750 0    50   ~ 0
+B
+Text Label 5950 1550 0    50   ~ 0
+Vcc
+Text Label 4400 3950 0    50   ~ 0
+Vin
+Wire Wire Line
+	5700 1700 5700 2100
+$Comp
+L Device:R R1
+U 1 1 5B99B80A
+P 4950 3800
+F 0 "R1" V 4743 3800 50  0000 C CNN
+F 1 "R" V 4834 3800 50  0000 C CNN
+F 2 "" V 4880 3800 50  0001 C CNN
+F 3 "~" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3800 4800 3800
+Wire Wire Line
+	5100 3800 5400 3800
+$EndSCHEMATC
