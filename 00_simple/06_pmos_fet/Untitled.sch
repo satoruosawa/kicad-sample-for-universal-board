@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_GDS Q1
+U 1 1 5B9C92AE
+P 5500 3700
+F 0 "Q1" H 5705 3654 50  0000 L CNN
+F 1 "2SJ334" H 5705 3745 50  0000 L CNN
+F 2 "" H 5700 3800 50  0001 C CNN
+F 3 "~" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5B9C932D
+P 5600 4450
+F 0 "D1" V 5638 4333 50  0000 R CNN
+F 1 "OSR5JA3Z74A" V 5547 4333 50  0000 R CNN
+F 2 "" H 5600 4450 50  0001 C CNN
+F 3 "~" H 5600 4450 50  0001 C CNN
+	1    5600 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B9C93C6
+P 4700 3250
+F 0 "R1" H 4770 3296 50  0000 L CNN
+F 1 "1k" H 4770 3205 50  0000 L CNN
+F 2 "" V 4630 3250 50  0001 C CNN
+F 3 "~" H 4700 3250 50  0001 C CNN
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B9C940D
+P 5600 5150
+F 0 "R2" H 5670 5196 50  0000 L CNN
+F 1 "100" H 5670 5105 50  0000 L CNN
+F 2 "" V 5530 5150 50  0001 C CNN
+F 3 "~" H 5600 5150 50  0001 C CNN
+	1    5600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5600 3500
+Wire Wire Line
+	4700 3100 4700 2800
+Connection ~ 4700 2800
+Wire Wire Line
+	4700 2800 5600 2800
+Wire Wire Line
+	4700 3400 4700 3700
+Wire Wire Line
+	4700 3700 5300 3700
+Connection ~ 4700 3700
+Wire Wire Line
+	5600 3900 5600 4300
+Wire Wire Line
+	5600 4600 5600 5000
+$Comp
+L power:GND #PWR01
+U 1 1 5B9C975D
+P 5600 5900
+F 0 "#PWR01" H 5600 5650 50  0001 C CNN
+F 1 "GND" H 5605 5727 50  0000 C CNN
+F 2 "" H 5600 5900 50  0001 C CNN
+F 3 "" H 5600 5900 50  0001 C CNN
+	1    5600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5300 5600 5900
+Text Label 3850 3850 0    50   ~ 0
+Vin
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B9C98D3
+P 3900 3700
+F 0 "#FLG02" H 3900 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 3874 50  0000 C CNN
+F 2 "" H 3900 3700 50  0001 C CNN
+F 3 "~" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B9C9908
+P 3900 2800
+F 0 "#FLG01" H 3900 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 2974 50  0000 C CNN
+F 2 "" H 3900 2800 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2800 4700 2800
+Wire Wire Line
+	3900 3700 4700 3700
+Text Label 3850 2900 0    50   ~ 0
+Vcc
+Text Label 5350 3650 0    50   ~ 0
+G
+Text Label 5700 3900 0    50   ~ 0
+D
+Text Label 5700 3500 0    50   ~ 0
+S
+$EndSCHEMATC
